@@ -1,0 +1,9 @@
+POST - https://q07422mcqi.execute-api.us-east-1.amazonaws.com/dev/v1/kitten
+
+GET - https://q07422mcqi.execute-api.us-east-1.amazonaws.com/dev/v1/kitten
+
+GET - https://q07422mcqi.execute-api.us-east-1.amazonaws.com/dev/v1/kitten/{name}
+
+PUT - https://q07422mcqi.execute-api.us-east-1.amazonaws.com/dev/v1/kitten/{name}
+
+DELETE - https://q07422mcqi.execute-api.us-east-1.amazonaws.com/dev/v1/kitten/{name}

@@ -1,0 +1,25 @@
+{
+  "name": "serverless-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasirghouri/serverless-crud.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yasirghouri/serverless-crud/issues"
+  },
+  "homepage": "https://github.com/yasirghouri/serverless-crud#readme",
+  "dependencies": {
+    "aws-sdk": "^2.865.0"
+  },
+  "devDependencies": {
+    "serverless-pseudo-parameters": "^2.5.0"
+  }
+}
