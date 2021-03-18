@@ -138,9 +138,9 @@ module.exports = {
       Key: {
         name: event.pathParameters.name,
       },
-      UpdateExpression: "set #age = :age",
+      UpdateExpression: "set age = :age",
       ExpressionAttributeName: {
-        "#age": "age",
+        age: "age",
       },
       ExpressionAttributeValues: {
         ":age": bodyObj.age,
@@ -148,7 +148,7 @@ module.exports = {
     };
     try {
       let dynamodb = new AWS.DynamoDB.DocumentClient();
-      dynamodb.update(updateParams).promise();
+      await dynamodb.update(updateParams).promise();
     } catch (updateError) {
       console.log("There was a problem updating the kitten");
       console.log("updateError", updateError);
