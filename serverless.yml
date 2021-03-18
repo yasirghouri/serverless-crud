@@ -70,32 +70,32 @@ plugins:
   - serverless-pseudo-parameters
 
 functions:
-  create:
-    handler: handler.create
+  createKitten:
+    handler: handler.createKitten
     events:
       - http:
           path: /v1/kitten
           method: post
-  list:
-    handler: handler.list
+  listKitten:
+    handler: handler.listKitten
     events:
       - http:
           path: /v1/kitten
           method: get
-  get:
-    handler: handler.get
+  getKitten:
+    handler: handler.getKitten
     events:
       - http:
           path: /v1/kitten/{name}
           method: get
-  update:
-    handler: handler.update
+  updateKitten:
+    handler: handler.updateKitten
     events:
       - http:
           path: /v1/kitten/{name}
           method: put
-  delete:
-    handler: handler.delete
+  deleteKitten:
+    handler: handler.deleteKitten
     events:
       - http:
           path: /v1/kitten/{name}
